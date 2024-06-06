@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/favicon/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/favicon/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/favicon/apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="src/favicon/favicon.ico" type="image/x-icon">
+    <title>JavaScript - Technical Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar" class="initial">
+        <header class="nav-header">
+            <h2><span class="scroll-down">Discover <span id="JS-Text">JavaScript</span> or scroll down!</span></h2>
+        </header>
+        <div class="nav-links">
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Common_Knowledge" class="nav-link">Common Knowledge</a>
+            <a href="#JavaScript_vs_Java" class="nav-link">JavaScript vs Java</a>
+            <a href="#Variables" class="nav-link">Variables</a>
+            <a href="#Data_Types" class="nav-link">Data Types</a>
+            <a href="#Conditional_Statements" class="nav-link">Conditional Statements</a>
+            <a href="#Loops" class="nav-link">Loops</a>
+            <a href="#Functions" class="nav-link">Functions</a>
+            <a href="#More" class="nav-link">More</a>
+        </div>
+    </nav>
+
+    <nav id="navbar-alt" class="">
+        <header class="nav-header-alt">
+            <h2>Discover <span id="JS-Text">JavaScript</span></h2>
+            <div class="arrow" onclick="clicked()">
+                <svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M98.9,184.7l1.8,2.1l136,156.5c4.6,5.3,11.5,8.6,19.2,8.6c7.7,0,14.6-3.4,19.2-8.6L411,187.1l2.3-2.6  c1.7-2.5,2.7-5.5,2.7-8.7c0-8.7-7.4-15.8-16.6-15.8v0H112.6v0c-9.2,0-16.6,7.1-16.6,15.8C96,179.1,97.1,182.2,98.9,184.7z"/></svg>
+            </div>
+        </header>
+        <div class="nav-links-alt">
+            <a href="#Introduction" class="nav-link-alt">Introduction</a>
+            <a href="#Common_Knowledge" class="nav-link-alt">Common Knowledge</a>
+            <a href="#JavaScript_vs_Java" class="nav-link-alt">JavaScript vs Java</a>
+            <a href="#Variables" class="nav-link-alt">Variables</a>
+            <a href="#Data_Types" class="nav-link-alt">Data Types</a>
+            <a href="#Conditional_Statements" class="nav-link-alt">Conditional Statements</a>
+            <a href="#Loops" class="nav-link-alt">Loops</a>
+            <a href="#Functions" class="nav-link-alt">Functions</a>
+            <a href="#More" class="nav-link-alt">More</a>
+        </div>
+    </nav>
+
+    <div class="circle primary" id="circle-1"></div>
+    <div class="circle secondary" id="circle-2"></div>
+    <div class="circle accent" id="circle-3"></div>
+
+    <header class="banner-container">
+        <figure class="banner-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+        </figure>
+        <div class="text-block">
+            <h1>Welcome To <span>JavaScript</span></h1>
+            <p>
+                A simple documentation about the programming language called JavaScript, providing basic knowledge
+                to create your first JavaScript projects!
+            </p>
+        </div>
+
+    </header>
+
+    <main id="main-doc" class="main-doc">
+        <section class="main-section" id="Introduction">
+            <header class="section-header">
+                <h1>Introduction</h1>
+            </header>
+            <p>
+                <span>JavaScript</span> is a cross-platform, object-oriented scripting language. It is a small and
+                lightweight language. Inside a host environment (for example, a web browser), JavaScript can be
+                connected to the objects of its environment to provide programmatic control over them.
+            </p>
+            <br>
+            <div class="img-container">
+                <figure class="introduction-image-container">
+                    <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image of a computer with a background of light pink">
+                </figure>
+            </div>
+            <p>
+                <span>JavaScript</span> contains a standard library of objects, such as Array, Date, and Math, and a
+                core set of language elements such as operators, control structures, and statements. Core JavaScript can
+                be extended for a variety of purposes by supplementing it with additional objects; for example:
+            </p>
+            <br>
+            <div class="introduction-content">
+                <p>
+                    <span>Client-side JavaScript</span> extends the core language by supplying objects to control a
+                    browser and its Document Object Model (DOM). For example, client-side extensions allow an
+                    application to place elements on an HTML form and respond to user events such as mouse clicks, form
+                    input, and page navigation.
+                </p>
+                <p>
+                    <span>Server-side JavaScript</span> extends the core language by supplying objects relevant to
+                    running JavaScript on a server. For example, server-side extensions allow an application to
+                    communicate with a database, provide continuity of information from one invocation to another of the
+                    application, or perform file manipulations on a server.
+                </p>
+            </div>
+        </section>
+        <section class="main-section" id="Common_Knowledge">
+            <header class="section-header">
+                <h1>Common Knowledge</h1>
+            </header>
+            <p>
+                <span>Programming Language</span> A scripting language primarily used for creating and controlling
+                dynamic website content. It was developed by Brendan Eich in 1995 and is different from Java, despite
+                their similar names.
+            </p>
+            <br>
+            <p>
+                <span>Client-Side Scripting</span> Mainly used in web browsers to enhance user interfaces and create
+                interactive web pages. It allows developers to manipulate web page content dynamically and respond to
+                user actions like clicks and key presses.
+            </p>
+            <br>
+            <p>
+                <span>Simple Syntax</span> Simple and easy-to-learn syntax, which makes it a great starting point for
+                beginners. It uses a syntax similar to other programming languages like C, making it familiar to many
+                developers.
+            </p>
+            <br>
+            <p>
+                <span>Integration with HTML and CSS</span> Works seamlessly with HTML and CSS to create modern web
+                applications. It can manipulate HTML elements, change styles, and even create animations, providing a
+                richer user experience.
+            </p>
+            <br>
+            <p>
+                <span>Event Handling</span> Allows developers to handle events such as user inputs, form submissions,
+                and page loads. This capability makes it possible to create interactive and responsive web applications.
+            </p>
+            <br>
+            <p>
+                <span>Cross-Browser Compatibility</span> Runs on all modern web browsers, including Chrome, Firefox,
+                Safari, and Edge. While there might be minor differences in implementation, most JavaScript code works
+                consistently across different browsers.
+            </p>
+        </section>
+        <section class="main-section" id="JavaScript_vs_Java">
+            <header class="section-header">
+                <h1>JavaScript vs Java</h1>
+            </header>
+            <p>
+                <span>JavaScript</span> and <span>Java</span> share some similarities but also exhibit fundamental
+                differences. The JavaScript language bears a resemblance to Java, yet it lacks Java's static typing and
+                robust type checking. JavaScript adheres to most of Java's expression syntax, naming conventions, and
+                basic control-flow constructs, which was a key factor in its renaming from LiveScript to JavaScript.
+            </p>
+            <br>
+            <p>
+                Unlike <span>Java's</span> compile-time system of classes constructed through declarations,
+                <span>JavaScript</span> employs a runtime system based on a limited number of data types, such as
+                numeric, Boolean, and string values. <span>JavaScript</span> utilizes a prototype-based object model
+                rather than the more prevalent class-based object model. The prototype-based model facilitates dynamic
+                inheritance, meaning that inheritance can vary among individual objects. Additionally,
+                <span>JavaScript</span> supports functions without special declarative requirements. Functions can act
+                as properties of objects, operating as loosely typed methods.
+            </p>
+            <br>
+            <figure class="jsvsj-image-container">
+                <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg"
+                    alt="Glasses facing a bunch of programming codes">
+            </figure>
+            <br>
+            <p>
+                <span>JavaScript</span> is notably more flexible compared to <span>Java</span>. There is no necessity to
+                declare all variables, classes, and methods. Concerns regarding whether methods are public, private, or
+                protected are also absent, and there is no requirement to implement interfaces. Variables, parameters,
+                and function return types do not need to be explicitly typed.
+            </p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header class="section-header">
+                <h1>Variables</h1>
+            </header>
+            <p>
+                You use <span>variables</span> as symbolic names for values in your application. The names of
+                variables,
+                called identifiers, conform to certain rules.
+            </p>
+            <br>
+            <p>
+                A <span>JavaScript identifier</span> must start with a letter, underscore (_), or dollar sign ($);
+                subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters
+                include
+                the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+            </p>
+            <br>
+            <p>
+                You can use <span>ISO 8859-1</span> or <span>Unicode letters</span> such as å and ü in identifiers.
+                You
+                can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names
+                are
+                Number_hits, temp99, and _name.
+            </p>
+            <br>
+            <p>
+                Declaration can be done in three (3) ways:
+            </p>
+            <article class="code-block">
+                <div id="code-1">
+                    <code>let x = 42</code>
+                    <p>"Latest"</p>
+                </div>
+                <div id="code-2">
+                    <code>var x = 42</code>
+                    <p>"Old"</p>
+                </div>
+                <div id="code-3">
+                    <code>x = 42</code>
+                    <p>"Don't Use"</p>
+                </div>
+            </article>
+            <p>
+                <span>Constants</span> can be also be declared. It is a <span>read-only</span> variable, which means
+                that you <span>cannot change</span> it. The syntax of a constant identifier is the same as for a
+                variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic,
+                numeric, or underscore characters.
+            </p>
+            <br>
+            <p>
+                Declaring a constant variable:
+            </p>
+            <article class="code-block">
+                <div id="#code">
+                    <code>const x = 42</code>
+                </div>
+            </article>
+            <p>
+                A <span>constant cannot change value</span> through assignment or be re-declared while the script is
+                running. It has to be initialized to a value. The scope rules for constants are the same as those for
+                let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a
+                variable.
+            </p>
+            <br>
+            <p>
+                You <span>cannot declare a constant</span> with the <span>same name</span> as a <span>function</span> or
+                <span>variable</span> in the same scope. For
+                example:
+            </p>
+            <article class="code-block">
+                <div id="code">
+                    <code>
+                        // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+                    </code>
+                    <code>
+                        WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+                    </code>
+                    <code>
+                        //statements }
+                    </code>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header class="section-header">
+                <h1>Data Types</h1>
+            </header>
+            <p>
+                The latest ECMAScript standard defines <span>seven (7) data types</span>:
+            </p>
+            <ol class="data-types">
+                <li class="data-type">
+                    <span class="data-type-header">Primitive Types</span>
+                    <ul class="primitive-types">
+                        <li class="primitive-type">
+                            <span class="important-text">Boolean</span> which are true and false.
+                        </li>
+                        <li class="primitive-type">
+                            <span class="important-text">null</span> which is a special keyword denoting a null value.
+                            Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other
+                            variant..
+                        </li>
+                        <li class="primitive-type">
+                            <span class="important-text">undefined</span>, which is a top-level property whose value is
+                            undefined.
+                        </li>
+                        <li class="primitive-type">
+                            <span class="important-text">Number</span>, which is a numeric value such as 42 (integer or
+                            int) or 3.14159 (float).
+                        </li>
+                        <li class="primitive-type">
+                            <span class="important-text">String</span>, which is a sequence of characters like "Howdy".
+                        </li>
+                        <li class="primitive-type">
+                            <span class="important-text">Symbol (new in ECMAScript 2015)</span>, which is a data type
+                            whose instances are unique and immutable.
+                        </li>
+                    </ul>
+                </li>
+                <li class="data-type">
+                    <span class="data-type-header">Object Type</span>
+                    <ul class="object-type">
+                        <li class="description">
+                            A complex type used to store collections of data and more complex entities. It can contain
+                            key-value pairs, where the key is a string and the value can be any data type, including
+                            other objects.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section class="main-section" id="Conditional_Statements">
+            <header class="section-header">
+                <h1>Conditional Statements</h1>
+            </header>
+            <p>
+                Use the <span>if statement</span> to execute a statement if a <span>logical condition</span> is
+                <span>true</span>. Use the <span>optional else clause</span> to execute a statement if the
+                <span>condition</span> is <span>false</span>. An if statement looks as follows:
+            </p>
+            <article class="code-block">
+                <div id="code" class="multiple">
+                    <code>
+                        if (condition) { 
+                    </code>
+                    <code>
+                        <span class="code-margin">statement_1;</span>
+                    </code>
+                    <code>
+                    } else {
+                    </code>
+                    <code>
+                        <span class="code-margin">statement_2;</span>
+                    </code>
+                    <code>
+                        }
+                    </code>
+                </div>
+            </article>
+            <p>
+                You may also <span>compound the statements</span> using <span>else if</span> to have multiple conditions
+                tested in sequence, as follows:
+            </p>
+            <article class="code-block">
+                <div id="code" class="multiple">
+                    <code>
+                        if (condition_1) {
+                    </code>
+                    <code>
+                        <span class="code-margin">statement_1;</span>
+                    </code>
+                    <code>
+                        } else if (condition_2) {
+                    </code>
+                    <code>
+                        <span class="code-margin">statement_2;</span>
+                    </code>
+                    <code>
+                        } else if (condition_3) {
+                    </code>
+                    <code>
+                        <span class="code-margin">statement_3;</span>
+                    </code>
+                    <code>
+                        } else {
+                    </code>
+                    <code>
+                        <span class="code-margin">statement_last;</span>
+                    </code>
+                    <code>
+                        }
+                    </code>
+                </div>
+            </article>
+            <p>
+                If you need to use an <span>assignment</span> in a conditional expression, a common practice is to
+                <span>put additional parentheses</span> around the assignment. For example:
+            </p>
+            <article class="code-block">
+                <div id="code">
+                    <code>
+                        if ((x = y)) {
+                    </code>
+                    <code>
+                        <span class="code-margin">/* statements here */</span>
+                    </code>
+                    <code>
+                        }
+                    </code>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Loops">
+            <header class="section-header">
+                <h1>
+                    Loops
+                </h1>
+            </header>
+            <p>
+                A <span>while statement</span> executes its statements <span>as long as</span> a specified condition
+                evaluates to <span>true</span>. A while statement looks as follows:
+            </p>
+            <article class="code-block">
+                <div id="code">
+                    <code>
+                        while (condition) {
+                    </code>
+                    <code>
+                        <span class="code-margin">statement...</span>
+                    </code>
+                    <code>
+                        }
+                    </code>
+                </div>
+            </article>
+            <p>
+                If the <span>condition becomes false</span>, statement within the loop <span>stops executing</span> and
+                control passes to the statement following the loop.
+            </p>
+            <br>
+            <p>
+                The <span>condition test</span> occurs <span>before statement</span> in the loop is executed. If the
+                <span>condition</span> returns <span>true</span>, statement is <span>executed</span> and the condition
+                is <span>tested again</span>. If the <span>condition</span> returns <span>false</span>, <span>execution
+                    stops</span> and control is passed to the statement following while.
+            </p>
+            <br>
+            <p>
+                The following while loop <span>iterates</span> as long as <span>n</span> is <span>less than
+                    three</span>:
+            </p>
+            <article class="code-block">
+                <div id="code">
+                    <code>
+                        var n = 0;
+                    </code>
+                    <code>
+                        var x = 0;
+                    </code>
+                    <code>
+                        while (n &lt; 3) {
+                    </code>
+                    <code>
+                        <span class="code-margin">n++; x += n;</span>
+                    </code>
+                    <code>
+                        }
+                    </code>
+                </div>
+            </article>
+            <p>
+                With <span>iteration</span>, the loop <span>increments n</span> and <span>adds</span> that value to
+                <span>x</span>. Therefore, <span>x</span> and <span>n</span> take on the following <span>values</span>:
+            </p>
+            <ul class="increment">
+                <li class="">
+                    After the <span class="important-text">first pass</span>: n = 1 and x = 1
+                </li>
+                <li class="">
+                    After the <span class="important-text">second pass</span>: n = 2 and x = 3
+                </li>
+                <li class="">
+                    After the <span class="important-text">third pass</span>: n = 3 and x = 6
+                </li>
+            </ul>
+            <br>
+            <p>
+                After completing the third pass, the condition n &lt; 3 is no longer true, so the loop terminates.
+            </p>
+        </section>
+        <section class="main-section" id="Functions">
+            <header class="section-header">
+                <h1>Functions</h1>
+            </header>
+            <p>
+                A <span>function definition</span> (also called a <span>function declaration</span>, or <span>function
+                    statement</span>) consists of the <span>function keyword</span>, followed by:
+            </p>
+            <ul class="function">
+                <li class="">
+                    The <span class="important-text">name</span> of the function
+                </li>
+                <li class="">
+                    A <span class="important-text">list of arguments</span> to the function, enclosed in parentheses and
+                    separated by commas.
+                </li>
+                <li class="">
+                    <span class="important-text">Statements</span> that define the function, enclosed in curly brackets,
+                    { }.
+                </li>
+            </ul>
+            <article class="code-block">
+                <div id="code">
+                    <code>
+                        function square(number) {
+                    </code>
+                    <code>
+                        <span class="code-margin">return number * number;</span>
+                    </code>
+                    <code>
+                        }
+                    </code>
+                </div>
+            </article>
+            <p>
+                The <span>function square</span> takes <span>one argument</span>, called <span>number</span>. The
+                function consists of one statement that says to return the argument of the function (that is, number)
+                multiplied by itself. The <span>return statement</span> specifies the <span>value returned</span> by the
+                function.
+            </p>
+        </section>
+        <section class="main-section" id="More">
+            <header class="section-header">
+                <h1>More</h1>
+            </header>
+            <p>
+                This website is done from summarizing the example project done by <span></span>FreeCodeCamp</span> in
+                their <span>Resposive Web Development</span> course. In order to learn more in depth about
+                <span>JavaScript</span>, you may click the suggested websites:
+            </p>
+            <div class="references">
+                <figure class="reference">
+                    <a href="https://www.w3schools.com/js/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg"
+                            alt="JavaScript Logo">
+                    </a>
+                </figure>
+                <figure class="reference">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">
+                        <img src="https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png"
+                            alt="JavaScript Logo">
+                    </a>
+                </figure>
+                <figure class="reference">
+                    <a href="https://devdocs.io/javascript/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                            alt="JavaScript Logo">
+                    </a>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer class="">
+        <div class="note">
+            <p>
+                This is not an official website of JavaScript but just an imitation of a Technical Documentation
+            </p>
+            <br>
+            <p>
+                This website is done as a prerequisite for the FreeCodeCamp certification of Responsive Web Design.
+            </p>
+        </div>
+        <div class="creator">
+            Poufles © All Rights Reserved 2024
+        </div>
+    </footer>
+    <script src="scripts/scrollnav.js"></script>
+    <script src="scripts/navalt.js"></script>
+</body>
+
+</html>
