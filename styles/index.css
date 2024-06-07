@@ -324,15 +324,14 @@ div.nav-links {
 }
 
 .jsvsj-image-container {
-    width: 100%;
-    height: 300px;
     overflow: hidden;
-    object-position: center;
-    object-fit: cover;
 }
 
 .jsvsj-image-container img {
-    transform: translateY(-55%);
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    height: 600px;
 }
 
 #Variables p:nth-of-type(4),
@@ -534,6 +533,9 @@ footer p {
 }
 
 @media screen and (max-width: 1050px) {
+    .jsvsj-image-container img {
+        height: 400px;
+    }
     .banner-container {
         grid-column: 1 / 13;
     }
@@ -571,6 +573,10 @@ footer p {
 }
 
 @media screen and (max-width: 855px) {
+    .circle {
+        opacity: 0.1;
+    }
+
     .banner-container {
         display: flex;
         flex-direction: column;
@@ -608,10 +614,6 @@ footer p {
     #Data_Types .data-type {
         margin: 20px 0;
     }
-
-    .jsvsj-image-container img {
-        transform: translateY(-35%);
-    }
 }
 
 @media screen and (max-width: 585px) {
@@ -623,6 +625,10 @@ footer p {
     .arrow svg {
         width: 25px !important;
         height: 25px !important;
+    }
+
+    #navbar-alt .nav-header-alt {
+        padding: 0 40px;
     }
 
     .nav-header-alt h2 {
