@@ -220,6 +220,7 @@ div.nav-links {
 .banner-container .text-block {
     width: 375px;
     min-width: 300px;
+    min-width: 300px;
     height: 275px;
 }
 
@@ -639,6 +640,17 @@ footer p {
         align-items: center;
     }
 
+    .banner-container .text-block {
+        margin-top: 10px;
+        width: auto;
+        padding: 0 30px;
+    }
+
+    .banner-container .text-block h1 {
+        font-size: var(--H1-Phone);
+        text-align: center;
+    }
+
     .reference {
         width: 200px;
         height: 200px;
@@ -661,10 +673,5 @@ footer p {
     #Loops li,
     .function li {
         margin: 20px 30px 0;
-    }
-
-    .banner-container .text-block h1 {
-        font-size: 30px;
-        text-align: center;
     }
 }
