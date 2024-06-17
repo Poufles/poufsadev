@@ -292,6 +292,17 @@ body {
   height: 30px;
 }
 
+.header-nav-small-container {
+  background-color: var(--primary-color);
+  width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+  position: relative;
+  height: 100vh;
+}
+
 .header-nav-small {
   height: 100vh;
   width: 100vw;
@@ -302,16 +313,6 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
   z-index: 99;
-}
-
-.header-nav-small-container {
-  background-color: var(--primary-color);
-  width: 400px;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  padding: 0 60px;
-  position: relative;
 }
 
 .header-nav-small-container > .exit-button {
@@ -1568,5 +1569,10 @@ footer
   
   main > #section3 > form > .text-container > .sub-header {
     font-size: 1.3rem;
+  }
+
+  .header-nav-small-container {
+    width: 300px;
+    padding: 0 20px;
   }
 }
