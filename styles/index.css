@@ -40,7 +40,6 @@ body {
   );
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
   z-index: 0;
 }
@@ -53,7 +52,7 @@ body {
 .banner-container > .brand-text-container {
   position: absolute;
   font-size: 20rem;
-  min-height: 1000px;
+  min-height: 500px;
   height: 100vh;
   width: 100%;
   z-index: 1;
@@ -64,7 +63,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 1000px;
+  min-height: 500px;
   height: 100vh;
   width: 100%;
   color: var(--primary-color);
@@ -604,7 +603,7 @@ main > #section2 > header > div > a {
   font-size: 1.3rem;
   display: flex;
   align-items: center;
-  width: max-content;
+  width: auto;
   transition: 0.5s;
 }
 
@@ -1432,13 +1431,17 @@ footer
   .banner-container > .brand-text-container {
     font-size: 10rem;
   }
-  
+
   .header-nav {
     padding: 30px 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .banner-container {
+    min-height: auto;
+  }
+
   main > #section2 > header > div {
     grid-column: 1 / 13;
   }
@@ -1549,7 +1552,7 @@ footer
   .banner-container > .brand-text-container {
     font-size: 8rem;
   }
-  
+
   .banner-container > .social-search-container {
     display: flex;
     flex-direction: column;
@@ -1558,15 +1561,15 @@ footer
   main > #section3 > form {
     padding: 60px 0;
   }
-  
+
   main > #section3 > form > div {
     min-width: 15%;
   }
-  
+
   main > #section3 > form > .text-container > .header-text {
     width: inherit;
   }
-  
+
   main > #section3 > form > .text-container > .sub-header {
     font-size: 1.3rem;
   }
@@ -1574,5 +1577,59 @@ footer
   .header-nav-small-container {
     width: 300px;
     padding: 0 20px;
+  }
+
+  main > section > article.card {
+    height: auto;
+    gap: 60px;
+  }
+
+  main > #section2 > header > div > p {
+    display: flex;
+    font-size: 2.2rem;
+  }
+
+  main > #section3 > form > .text-container > .header-text {
+    font-size: 2.2rem;
+  }
+
+  main > section > article.card > .pattern {
+    width: 60px;
+    height: 60px;
+  }
+
+  main > #section2 > .promotion-video-wrapper > .promotion-video > .overlay {
+    background-image: linear-gradient(
+      0deg,
+      var(--secondary-color),
+      transparent 50%
+    );
+  }
+
+  main > #section2 > .promotion-video-wrapper > .promotion-video > p {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    font-size: 2.1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  main > #section3 > form > .email-container {
+    width: 90%;
+  }
+
+  main > #section3 > form > .email-container > input[type="email"] {
+    width: 100%;
+  }
+  main > #section3 > form > .text-container {
+    width: 90%;
+  }
+
+  footer > .footer-container > .logo-container {
+    width: 25%;
+  }
+  footer > .footer-container > .content-container {
+    width: 75%;
   }
 }
