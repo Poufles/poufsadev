@@ -1,0 +1,312 @@
+@media screen and (max-width: 1200px) {
+  .title h1 {
+    font-size: 6rem;
+  }
+
+  .title h1::after {
+    font-size: 1.1rem;
+    bottom: -25%;
+  }
+
+  #start {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+
+  .exit-container {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .exit-container svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .computer-container > svg:first-of-type {
+    width: 270px;
+    height: 270px;
+  }
+
+  .thinking-wrapper {
+    top: -20%;
+    left: -75%;
+  }
+
+  .thinking-container {
+    width: 300px;
+    height: 175px;
+  }
+
+  #bubble1 {
+    display: none;
+  }
+
+  #bubble2 {
+    bottom: 7%;
+    right: 5%;
+    width: 70px;
+    height: 35px;
+  }
+
+  #bubble3 {
+    width: 250px;
+    height: 125px;
+  }
+
+  .score-container {
+    padding: 30px 40px;
+    gap: 20px;
+    border-radius: 30px;
+  }
+
+  .scores-item {
+    gap: 70px;
+  }
+
+  .score-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .score-wrapper p {
+    font-size: 1.8rem;
+  }
+
+  .choice-container h1 {
+    font-size: 3.3rem;
+  }
+
+  .choice-items {
+    gap: 30px;
+  }
+
+  .choice {
+    padding: 35px;
+    border-radius: 25px;
+  }
+
+  .choice svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+    .win-text {
+        width: auto;
+        text-align: center;
+    }
+
+    #winner-choice {
+        top: 71%;
+        transform: translate(-50%, -71%);
+        width: max-content;
+    }
+    
+    .loser-text {
+        top: 76%;
+        transform: translate(-50%, -76%);
+        width: max-content;
+    }
+
+    .win-container button {
+        top: 83%;
+        transform: translate(-50%, -83%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .title h1 {
+    flex-direction: column;
+  }
+
+  .title h1::after {
+    bottom: 2%;
+    right: -25%;
+    rotate: -15deg;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .thought-container svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  #bubble2 {
+    bottom: 7%;
+    right: 5%;
+    width: 50px;
+    height: 25px;
+  }
+
+  #bubble3 {
+    width: 175px;
+    height: 100px;
+    top: auto;
+    left: auto;
+    bottom: 17%;
+    right: 10%;
+  }
+
+  .score-container {
+    padding: 25px 35px;
+    gap: 10px;
+    border-radius: 20px;
+  }
+
+  .scores-item {
+    gap: 40px;
+  }
+
+  .score-container h1 {
+    font-size: 2.1rem;
+  }
+
+  .score-wrapper p {
+    font-size: 1.6rem;
+  }
+
+  .choice-container h1 {
+    font-size: 2.8rem;
+  }
+
+  .choice-items {
+    gap: 25px;
+  }
+
+  .choice {
+    padding: 27px;
+    border-radius: 20px;
+  }
+
+  .choice svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .title h1 {
+    font-size: 5.5rem;
+  }
+
+  .title h1::after {
+    font-size: 0.9rem;
+    padding: 9px 10px;
+    bottom: 0;
+    right: -7%;
+  }
+
+  .computer-wrapper {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+  }
+
+  .computer-container > svg:first-of-type {
+    width: 215px;
+    height: 215px;
+  }
+
+  .thinking-wrapper {
+    top: -24%;
+    left: -23%;
+  }
+  
+  .thinking-container {
+    width: 200px;
+    height: 160px;
+  }
+
+  #bubble2 {
+    bottom: 17%;
+    right: 25%;
+    width: 50px;
+    height: 25px;
+  }
+
+  #bubble3 {
+    top: 0;
+    left: 0;
+  }
+
+  .score-container {
+    padding: 17px 27px;
+    gap: 10px;
+    border-radius: 20px;
+  }
+
+  .score-container h1 {
+    font-size: 1.9rem;
+  }
+
+  .score-wrapper p {
+    font-size: 1.4rem;
+  }
+
+  .choice-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .choice-items {
+    gap: 15px;
+  }
+
+  .choice {
+    padding: 23px;
+  }
+
+  .choice svg {
+    width: 47px;
+    height: 47px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+    .win-text {
+        font-size: 6rem;
+    }
+
+    #winner-choice {
+        top: 64%;
+        transform: translate(-50%, -64%);
+        font-size: 2rem;
+    }
+    
+    .loser-text {
+        top: 69%;
+        transform: translate(-50%, -69%);
+        font-size: 2rem;
+    }
+
+    .win-container button {
+        top: 75%;
+        transform: translate(-50%, -75%);
+        padding: 13px 28px;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width: 480px) and (max-height: 700px) {
+    #winner-choice {
+        top: 70%;
+        transform: translate(-50%, -70%);
+        font-size: 2rem;
+    }
+    
+    .loser-text {
+        top: 76%;
+        transform: translate(-50%, -76%);
+        font-size: 2rem;
+    }
+
+    .win-container button {
+        top: 85%;
+        transform: translate(-50%, -85%);
+        padding: 13px 28px;
+        width: max-content;
+    }
+}

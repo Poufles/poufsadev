@@ -1,0 +1,106 @@
+.start {
+    animation: game_start 2s ease-in-out forwards;
+  }
+  
+  .restart {
+    animation: game_restart 2s ease-in-out forwards;
+  }
+
+.load-game {
+    animation: load_game 2.5s ease-in-out 2s;
+}
+
+
+/* ANIMATIONS */
+@keyframes animate_title {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes animate_sub_title {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes game_start {
+  0% {
+    display: flex;
+    transform: scale(1);
+    opacity: 1;
+  }
+  90%,
+  99% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes game_restart {
+  0% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  0.1% {
+    opacity: 1;
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes load_game {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  85% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes thought_animation {
+  0%,
+  32% {
+    opacity: 1;
+  }
+  33%,
+  100% {
+    opacity: 0;
+  }
+}
