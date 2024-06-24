@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  height: 100vh;
 }
 
 .canvas-container {
@@ -222,6 +223,10 @@ body {
 
   .custom-colors {
     width: 200px;
+  }
+
+  .player-color, .pixels, .erase-content button {
+    font-size: 0.7rem;
   }
 }
 
