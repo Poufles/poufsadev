@@ -88,6 +88,33 @@ btn_rainbow.addEventListener(`click`, () => {
       }
       square.setAttribute(`style`, `background-color: ${randomColor}`);
     });
+    square.addEventListener(`touchstart`, () => {
+      let randomColor = Math.round(Math.random() * 6);
+      switch (randomColor) {
+        case 0:
+          randomColor = `red`;
+          break;
+        case 1:
+          randomColor = `orange`;
+          break;
+        case 2:
+          randomColor = `yellow`;
+          break;
+        case 3:
+          randomColor = `green`;
+          break;
+        case 4:
+          randomColor = `blue`;
+          break;
+        case 5:
+          randomColor = `indigo`;
+          break;
+        case 6:
+          randomColor = `violet`;
+          break;
+      }
+      square.setAttribute(`style`, `background-color: ${randomColor}`);
+    });
   });
 });
 
