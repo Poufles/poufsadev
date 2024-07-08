@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/component.css">
+    <script src="scripts/variables.js" defer></script>
+    <script src="scripts/style.js" defer></script>
+    <script src="scripts/keys.js" defer></script>
+    <script src="scripts/calculate.js" defer></script>
+    <title>Basic Math Calculator in JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="text-container">
+                <p class="title"><span class="firstline"><span class="letter-change">B</span><span class="letter-change">a</span><span class="letter-change">s</span><span class="letter-change">i</span><span class="letter-change">c</span> <span class="letter-change">C</span><span class="letter-change">a</span><span class="letter-change">l</span><span class="letter-change">c</span><span class="letter-change">u</span><span class="letter-change">l</span><span class="letter-change">a</span><span class="letter-change">t</span><span class="letter-change">o</span><span class="letter-change">r</span></span><span class="secondline"><span class="letter-change">i</span><span class="letter-change">n</span> <span class="js-text" data-text="JavaScript">JavaScript</span></span></p>
+                <div class="features-container">
+                    <p class="feature-title"><span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>s</span></p>
+                    <ul class="features-list">
+                        <li class="feature">Basic Arithmetic Operations</li>
+                        <li class="feature">Clear and Remove</li>
+                        <li class="feature">Simple History Return</li>
+                        <li class="feature">Clean Design by <a href="https://www.figma.com/@sadekui" target="_blank">SadekUI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+           <div class="calculator-body">
+                <div class="screen screen-initial">
+                    <div class="upper-screen">
+                        <!-- <button class="history-container">
+                            <div class="operation-container">44 + 33</div>
+                            <div class="answer-container">
+                                <p class="equal-sign">=</p>
+                                <p class="answer">77</p>
+                            </div>
+                        </button> -->
+                    </div>
+                    <div class="bottom-screen">
+                        <button class="operation-container">
+                            <div class="operation-text active"></div>
+                        </button>
+                        <!-- <div class="answer-container">
+                            <p class="equal-sign">=</p>
+                            <p class="answer">100</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <button class="keys" id="all-clear">AC</button>
+                    <button class="keys" id="clear">C</button>
+                    <button class="keys operator">+</button>
+                    <button class="keys operator">-</button>
+                    <button class="keys numpad">7</button>
+                    <button class="keys numpad">8</button>
+                    <button class="keys numpad">9</button>
+                    <button class="keys operator">x</button>
+                    <button class="keys numpad">4</button>
+                    <button class="keys numpad">5</button>
+                    <button class="keys numpad">6</button>
+                    <button class="keys operator">/</button>
+                    <button class="keys numpad">1</button>
+                    <button class="keys numpad">2</button>
+                    <button class="keys numpad">3</button>
+                    <button class="keys equal">=</button>
+                    <button class="keys numpad">0</button>
+                    <button class="keys dot">.</button>
+                </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
